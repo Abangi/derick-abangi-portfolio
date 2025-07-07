@@ -77,56 +77,104 @@ const projects = [
     {
         title: 'Real Estate Market Analyzer',
         description: 'Interactive dashboard showing real estate price trends, inventory levels, and market conditions by neighborhood. Scrapes data from Zillow and Redfin.',
-        tags: ['Python', 'BeautifulSoup', 'Pandas', 'Plotly', 'Flask'],
+        longDescription: 'This project involved building a comprehensive real estate analytics platform that aggregates and analyzes property data from multiple sources. The system includes automated web scrapers, a data processing pipeline, and an interactive dashboard. Key features include price trend analysis, neighborhood comparisons, and predictive modeling for property valuations.',
+        tags: ['Python', 'BeautifulSoup', 'Pandas', 'Plotly', 'Flask', 'Data Visualization', 'Web Scraping'],
         github: '#',
         demo: '#',
         icon: 'fa-home',
-        dataSource: 'Zillow, Redfin, local MLS'
+        dataSource: 'Zillow, Redfin, local MLS',
+        technologies: ['Python', 'BeautifulSoup', 'Pandas', 'Plotly', 'Flask', 'PostgreSQL', 'Docker'],
+        features: [
+            'Automated data collection from multiple real estate platforms',
+            'Interactive dashboards with filtering and comparison tools',
+            'Predictive modeling for property valuations',
+            'Email alerts for price drops and new listings'
+        ]
     },
     {
         title: 'Tech Job Market Dashboard',
         description: 'Analysis of job postings to track in-demand skills, salary trends, and hiring patterns in the tech industry.',
-        tags: ['Python', 'Selenium', 'D3.js', 'MongoDB', 'Node.js'],
+        longDescription: 'A data analytics platform that aggregates and analyzes job postings from various tech job boards. The system provides insights into the most in-demand skills, salary trends, and hiring patterns across different regions and industries. The dashboard helps job seekers identify skill gaps and employers understand market trends.',
+        tags: ['Python', 'Selenium', 'D3.js', 'MongoDB', 'Node.js', 'Data Analysis', 'Web Scraping'],
         github: '#',
         demo: '#',
         icon: 'fa-briefcase',
-        dataSource: 'LinkedIn, Indeed, Stack Overflow Jobs'
+        dataSource: 'LinkedIn, Indeed, Stack Overflow Jobs',
+        technologies: ['Python', 'Selenium', 'MongoDB', 'Node.js', 'D3.js', 'Express'],
+        features: [
+            'Automated job posting collection and processing',
+            'Interactive visualizations of job market trends',
+            'Skill gap analysis and recommendations',
+            'Customizable alerts for new job postings'
+        ]
     },
     {
         title: 'Crypto Market Sentiment Tracker',
         description: 'Real-time sentiment analysis of social media and news to predict cryptocurrency price movements.',
-        tags: ['Python', 'NLTK', 'BeautifulSoup', 'TensorFlow', 'Streamlit'],
-        github: '#',
-        demo: '#',
-        icon: 'fa-coins',
-        dataSource: 'Twitter, Reddit, Crypto News APIs'
-    },
-    {
-        title: 'Global Air Quality Dashboard',
-        description: 'Interactive map showing real-time and historical air quality data from cities worldwide.',
-        tags: ['Python', 'Scrapy', 'Folium', 'Dash', 'PostgreSQL'],
-        github: '#',
-        demo: '#',
-        icon: 'fa-wind',
-        dataSource: 'AirVisual, OpenAQ, government APIs'
-    },
-    {
-        title: 'Smart Shopping Assistant',
-        description: 'Price comparison and tracking tool that scrapes e-commerce sites to find the best deals and price drop alerts.',
-        tags: ['Python', 'Scrapy', 'BeautifulSoup', 'FastAPI', 'React'],
-        github: '#',
-        demo: '#',
-        icon: 'fa-shopping-cart',
-        dataSource: 'Amazon, Best Buy, Walmart'
-    },
-    {
-        title: 'Viral Content Predictor',
-        description: 'Analyzes social media posts to identify trending topics and predict viral content with network graph visualizations.',
-        tags: ['Python', 'Tweepy', 'NetworkX', 'D3.js', 'Flask'],
+        longDescription: 'A real-time sentiment analysis platform that monitors social media and news sources to gauge market sentiment around various cryptocurrencies. The system uses natural language processing to analyze text data and generate trading signals based on sentiment trends.',
+        tags: ['Python', 'NLTK', 'BeautifulSoup', 'TensorFlow', 'Streamlit', 'Machine Learning', 'NLP'],
         github: '#',
         demo: '#',
         icon: 'fa-chart-line',
-        dataSource: 'Twitter, Reddit, Instagram'
+        dataSource: 'Twitter, Reddit, Crypto News APIs',
+        technologies: ['Python', 'TensorFlow', 'NLTK', 'Streamlit', 'Docker', 'AWS'],
+        features: [
+            'Real-time sentiment analysis from multiple sources',
+            'Price movement prediction models',
+            'Customizable alerts for sentiment shifts',
+            'Interactive dashboards with historical data'
+        ]
+    },
+    {
+        title: 'Smart Shopping Assistant',
+        description: 'Browser extension that finds the best deals and price history across multiple e-commerce platforms.',
+        longDescription: 'A browser extension that helps users find the best deals by comparing prices across multiple e-commerce platforms. The tool also provides price history charts, price drop alerts, and product availability notifications.',
+        tags: ['JavaScript', 'Chrome Extension', 'Python', 'Flask', 'BeautifulSoup', 'Web Scraping'],
+        github: '#',
+        demo: '#',
+        icon: 'fa-shopping-cart',
+        dataSource: 'Amazon, eBay, Walmart, and other e-commerce sites',
+        technologies: ['JavaScript', 'Chrome Extension', 'Python', 'Flask', 'BeautifulSoup', 'PostgreSQL'],
+        features: [
+            'Price comparison across multiple retailers',
+            'Price history tracking and alerts',
+            'Browser extension for easy access',
+            'Wishlist and price drop notifications'
+        ]
+    },
+    {
+        title: 'Global Air Quality Dashboard',
+        description: 'Interactive map showing real-time air quality index (AQI) data from around the world with historical trends.',
+        longDescription: 'A comprehensive air quality monitoring platform that aggregates data from thousands of monitoring stations worldwide. The dashboard provides real-time air quality indices, pollution forecasts, and health recommendations based on current conditions.',
+        tags: ['Python', 'Dash', 'Pandas', 'GeoPandas', 'Folium', 'Data Visualization'],
+        github: '#',
+        demo: '#',
+        icon: 'fa-wind',
+        dataSource: 'OpenAQ, World Air Quality Index',
+        technologies: ['Python', 'Dash', 'Pandas', 'GeoPandas', 'Folium', 'Docker', 'AWS'],
+        features: [
+            'Real-time air quality monitoring',
+            'Interactive global and local maps',
+            'Historical data analysis',
+            'Health recommendations based on AQI'
+        ]
+    },
+    {
+        title: 'Viral Content Predictor',
+        description: 'Machine learning model that predicts the virality potential of social media content based on historical data.',
+        longDescription: 'A machine learning platform that analyzes social media content to predict its potential to go viral. The system considers various factors including content type, timing, engagement metrics, and historical performance to provide virality scores and recommendations.',
+        tags: ['Python', 'Scikit-learn', 'TensorFlow', 'Flask', 'D3.js', 'Machine Learning', 'NLP'],
+        github: '#',
+        demo: '#',
+        icon: 'fa-viruses',
+        dataSource: 'Twitter, Instagram, and YouTube APIs',
+        technologies: ['Python', 'TensorFlow', 'Scikit-learn', 'Flask', 'D3.js', 'Docker'],
+        features: [
+            'Virality prediction scoring',
+            'Content optimization suggestions',
+            'Performance tracking and analytics',
+            'Multi-platform support (Twitter, Instagram, YouTube)'
+        ]
     }
 ];
 
@@ -176,11 +224,30 @@ function applyThemePreference() {
     updateThemeIcon(savedTheme === 'dark');
 }
 
-// Mobile Menu Toggle
-function toggleMobileMenu() {
-    hamburger.classList.toggle('active');
+// Mobile menu toggle
+document.querySelector('.hamburger').addEventListener('click', function() {
+    const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
-}
+    this.classList.toggle('active');
+    
+    // Toggle overflow on body when mobile menu is open
+    if (navLinks.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
+});
+
+// Close mobile menu when clicking on a nav link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) { // Only for mobile
+            document.querySelector('.nav-links').classList.remove('active');
+            document.querySelector('.hamburger').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+});
 
 // Close mobile menu when clicking on a nav link
 function closeMobileMenu() {
@@ -286,19 +353,146 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Initialize project filters and modal
+function initProjectFeatures() {
+    const projectsGrid = document.querySelector('.projects-grid');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const modal = document.getElementById('project-modal');
+    const modalContent = modal.querySelector('.modal-body');
+    const closeModal = modal.querySelector('.close-modal');
+    
+    if (!projectsGrid) return;
+    
+    // Filter projects by tag
+    function filterProjects(filter) {
+        const allProjects = document.querySelectorAll('.project-card');
+        const activeBtn = document.querySelector('.filter-btn.active');
+        
+        if (activeBtn) {
+            activeBtn.classList.remove('active');
+        }
+        
+        // Update active button
+        const currentBtn = Array.from(filterButtons).find(btn => btn.dataset.filter === filter);
+        if (currentBtn) {
+            currentBtn.classList.add('active');
+        }
+        
+        allProjects.forEach(project => {
+            const tags = project.dataset.tags ? project.dataset.tags.split(' ') : [];
+            
+            if (filter === 'all' || tags.some(tag => tag === filter)) {
+                project.style.display = 'flex';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+    }
+    
+    // Open project modal
+    function openModal(project) {
+        modalContent.innerHTML = `
+            <h3>${project.title}</h3>
+            <div class="project-meta">
+                <div class="project-icon">
+                    <i class="fas ${project.icon || 'fa-project-diagram'}"></i>
+                </div>
+                <div class="project-details">
+                    <p class="project-description">${project.longDescription || project.description}</p>
+                    ${project.dataSource ? `
+                    <div class="project-data-source">
+                        <span class="data-source-label">Data Source:</span>
+                        <span class="data-source-value">${project.dataSource}</span>
+                    </div>` : ''}
+                </div>
+            </div>
+            
+            ${project.features && project.features.length > 0 ? `
+            <div class="project-features">
+                <h4>Key Features</h4>
+                <ul>
+                    ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                </ul>
+            </div>` : ''}
+            
+            <div class="project-technologies">
+                <h4>Technologies Used</h4>
+                <div class="tech-tags">
+                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
+            </div>
+            
+            <div class="project-tags">
+                ${project.tags.map(tag => `<span class="tag" data-tag="${tag.toLowerCase()}">${tag}</span>`).join('')}
+            </div>
+            
+            <div class="project-links">
+                ${project.github ? `
+                <a href="${project.github}" target="_blank" class="btn btn-outline" aria-label="View on GitHub">
+                    <i class="fab fa-github"></i> View Code
+                </a>` : ''}
+                ${project.demo ? `
+                <a href="${project.demo}" target="_blank" class="btn btn-primary" aria-label="View live demo">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>` : ''}
+            </div>
+        `;
+        
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    // Close modal
+    function closeModalHandler() {
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+    }
+    
+    // Close modal when clicking outside content
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModalHandler();
+        }
+    });
+    
+    // Close modal with escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+            closeModalHandler();
+        }
+    });
+    
+    closeModal.addEventListener('click', closeModalHandler);
+    
+    // Add filter button event listeners
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.dataset.filter;
+            filterProjects(filter);
+        });
+    });
+    
+    // Initial filter
+    filterProjects('all');
+    
+    return { filterProjects, openModal };
+}
+
 // Render projects with staggered animation
 function renderProjects() {
     const projectsGrid = document.querySelector('.projects-grid');
+    
     if (!projectsGrid) return;
     
-    // Clear existing content
+    // Clear existing projects
     projectsGrid.innerHTML = '';
     
-    // Create project cards with staggered animation
+    // Create project cards
     projects.forEach((project, index) => {
         const projectCard = document.createElement('div');
         projectCard.className = 'project-card';
         projectCard.style.animationDelay = `${index * 0.1}s`;
+        projectCard.dataset.tags = project.tags.map(tag => tag.toLowerCase().replace(/\s+/g, '-')).join(' ');
         
         projectCard.innerHTML = `
             <div class="project-header">
@@ -318,95 +512,42 @@ function renderProjects() {
                     <span class="data-source-value">${project.dataSource}</span>
                 </div>` : ''}
                 <div class="project-tags">
-                    ${project.tags.map(tag => `<span class="tag" data-tag="${tag.toLowerCase()}">${tag}</span>`).join('')}
+                    ${project.tags.slice(0, 4).map(tag => `<span class="tag" data-tag="${tag.toLowerCase()}">${tag}</span>`).join('')}
+                    ${project.tags.length > 4 ? `<span class="tag more-tag">+${project.tags.length - 4} more</span>` : ''}
                 </div>
                 <div class="project-links">
-                    <a href="${project.github}" target="_blank" class="btn btn-outline" aria-label="View code on GitHub">
+                    <button class="btn btn-outline view-details" aria-label="View project details">
+                        <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    ${project.github ? `
+                    <a href="${project.github}" target="_blank" class="btn btn-outline" aria-label="View on GitHub">
                         <i class="fab fa-github"></i> Code
-                    </a>
-                    ${project.demo !== '#' ? `
-                    <a href="${project.demo}" target="_blank" class="btn btn-primary" aria-label="View live demo">
-                        <i class="fas fa-external-link-alt"></i> Live Demo
                     </a>` : ''}
                 </div>
             </div>
         `;
         
-        // Add hover effect for 3D tilt
-        projectCard.addEventListener('mousemove', (e) => {
-            const rect = projectCard.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            
-            const angleX = (y - centerY) / 20;
-            const angleY = (centerX - x) / 20;
-            
-            projectCard.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) translateY(-10px) scale(1.02)`;
-            projectCard.style.boxShadow = `
-                ${-angleY * 2}px ${angleX * 2}px 30px rgba(0, 0, 0, 0.15),
-                0 10px 25px -5px rgba(0, 0, 0, 0.1)
-            `;
-        });
+        // Add click event to open modal
+        const viewDetailsBtn = projectCard.querySelector('.view-details');
+        if (viewDetailsBtn) {
+            viewDetailsBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const { openModal } = initProjectFeatures();
+                openModal(project);
+            });
+        }
         
-        projectCard.addEventListener('mouseleave', () => {
-            projectCard.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0) scale(1)';
-            projectCard.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+        // Also make the whole card clickable to view details
+        projectCard.addEventListener('click', () => {
+            const { openModal } = initProjectFeatures();
+            openModal(project);
         });
         
         projectsGrid.appendChild(projectCard);
-        
-        // Add animation after a short delay to allow for initial render
-        setTimeout(() => {
-            projectCard.classList.add('visible');
-        }, 100 + (index * 100));
     });
     
-    // Add filter functionality
-    setupProjectFilters();
-}
-
-// Setup project filters
-function setupProjectFilters() {
-    const filterContainer = document.createElement('div');
-    filterContainer.className = 'project-filters';
-    filterContainer.innerHTML = `
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="python">Python</button>
-        <button class="filter-btn" data-filter="javascript">JavaScript</button>
-        <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
-        <button class="filter-btn" data-filter="web">Web</button>
-    `;
-    
-    const projectsGrid = document.querySelector('.projects-grid');
-    if (projectsGrid && projectsGrid.parentNode) {
-        projectsGrid.parentNode.insertBefore(filterContainer, projectsGrid);
-        
-        // Add filter button event listeners
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Update active button
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-                
-                // Filter projects
-                const filter = button.getAttribute('data-filter');
-                const projectCards = document.querySelectorAll('.project-card');
-                
-                projectCards.forEach(card => {
-                    if (filter === 'all') {
-                        card.style.display = 'block';
-                    } else {
-                        const hasTag = card.querySelector(`.tag[data-tag="${filter}"]`);
-                        card.style.display = hasTag ? 'block' : 'none';
-                    }
-                });
-            });
-        });
-    }
+    // Initialize project features after rendering
+    initProjectFeatures();
 }
 
 // Form validation setup
@@ -562,12 +703,15 @@ function handleResumeDownload(e) {
 
 // Initialize
 function init() {
-    // Apply saved theme
-    applyThemePreference();
+    // Set current year in footer
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
     
-    // Theme toggle event listener
+    // Initialize theme toggle
     if (themeToggle) {
         themeToggle.addEventListener('click', toggleTheme);
+        applyThemePreference();
     }
     
     // Mobile menu toggle
@@ -575,21 +719,13 @@ function init() {
         hamburger.addEventListener('click', toggleMobileMenu);
     }
     
-    // Close mobile menu when clicking outside or on a nav link
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.nav-links') && !e.target.closest('.hamburger')) {
-            closeMobileMenu();
-        }
-        
-        // Close menu when clicking on a nav link
-        if (e.target.closest('.nav-links a')) {
-            closeMobileMenu();
-        }
+    // Close mobile menu when clicking on a nav link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
     });
     
     // Navbar scroll effect
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial check
     
     // Scroll to top button
     if (scrollToTopBtn) {
@@ -597,37 +733,61 @@ function init() {
         scrollToTopBtn.addEventListener('click', scrollToTop);
     }
     
-    // Render projects
-    renderProjects();
-    
-    // Contact form submission with validation
-    if (contactForm) {
-        setupFormValidation();
-    }
-    
-    // Resume download
-    const resumeDownloadBtns = document.querySelectorAll('#resume-download, #download-resume');
-    resumeDownloadBtns.forEach(btn => {
-        if (btn) {
-            btn.addEventListener('click', handleResumeDownload);
-        }
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Update URL without scrolling
+                if (history.pushState) {
+                    history.pushState(null, null, targetId);
+                } else {
+                    location.hash = targetId;
+                }
+            }
+        });
     });
     
-    // Add animation to project cards when they come into view
+    // Render projects and initialize features
+    renderProjects();
+    
+    // Setup form validation
+    setupFormValidation();
+    
+    // Handle contact form submission
+    if (contactForm) {
+        contactForm.addEventListener('submit', handleContactFormSubmit);
+    }
+    
+    // Initialize animations
     setupScrollAnimations();
     
-    // Hide loading animation when page is fully loaded
+    // Hide loading animation when everything is loaded
     window.addEventListener('load', () => {
         setTimeout(() => {
             document.body.classList.add('loaded');
-            
-            // Add pulse animation to CTA buttons after load
-            const ctaButtons = document.querySelectorAll('.btn-primary');
-            ctaButtons.forEach(btn => {
-                btn.classList.add('pulse-animation');
-            });
-        }, 1000);
+            if (loadingAnimation) {
+                loadingAnimation.style.display = 'none';
+            }
+        }, 500);
     });
+    
+    // Add touch support for project cards on mobile
+    document.addEventListener('touchstart', function() {}, true);
 }
 
 // Initialize when DOM is fully loaded
