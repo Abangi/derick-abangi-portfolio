@@ -1,6 +1,6 @@
 # Derick Polycap Abangi - Data Science Portfolio
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue)](https://yourusername.github.io/derick-abangi-portfolio/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue)](https://abangi.github.io/derick-abangi-portfolio/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A clean, modern, and responsive portfolio website for Derick Polycap Abangi, showcasing his data science projects, skills, and experience. Built with HTML, CSS, and JavaScript, and deployed on GitHub Pages.
@@ -51,7 +51,7 @@ derick-abangi-portfolio/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/derick-abangi-portfolio.git
+   git clone https://github.com/abangi/derick-abangi-portfolio.git
    cd derick-abangi-portfolio
    ```
 
@@ -81,7 +81,7 @@ This project is set up to be deployed on GitHub Pages:
 2. Push your code to the repository
 3. Go to Settings > Pages
 4. Select the `main` branch and click "Save"
-5. Your site will be live at `https://yourusername.github.io/your-repo-name/`
+5. Your site will be live at `https://abangi.github.io/derick-abangi-portfolio/`
 
 ## 📝 License
 
@@ -98,7 +98,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Name**: Derick Polycap Abangi
 - **Email**: derickpolycap@gmail.com
 - **Phone**: +254 740 685 346
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **GitHub**: [@abangi](https://github.com/abangi)
+- **LinkedIn**: [abangi](https://www.linkedin.com/in/abangi)
+- **Twitter**: [@abangi](https://twitter.com/abangi)
 
 ---
 
